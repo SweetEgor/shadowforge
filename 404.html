@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shadow Forge</title>
+    <script type="text/javascript">
+      // Перенаправляем все запросы на index.html, сохраняя путь как хэш
+      sessionStorage.redirect = window.location.pathname;
+      window.location = "/" + "#" + window.location.pathname.slice(1);
+    </script>
+  </head>
+  <body></body>
+</html>
